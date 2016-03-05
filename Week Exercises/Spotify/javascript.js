@@ -27,12 +27,14 @@ function printTime () {
 }
 
 function call_Ajax(type){
+  console.log(type);
+  console.log('https://api.spotify.com/v1/search?type=track&q='+$('.track-search').val().replace(" ", "%20"));
   var ajax_url="";
   var ajax_type="";
   
   switch(type){
     case 'track':
-      ajax_url='https://api.spotify.com/v1/search?type=track&q='+$('.track-search').val();
+      ajax_url='https://api.spotify.com/v1/search?type=track&q='+$('.track-search').val().replace(" ", "%20");
       ajax_type=showSongs;
       break;
     case 'artist':
@@ -50,31 +52,43 @@ function call_Ajax(type){
 }
 
 function showSongs(response){
-  $('.title').empty();
-  $('.author').empty();
-  
-  if ($('.btn-play').hasClass("playing")){
-    $('.btn-play').removeClass("playing");
-    $('.js-player').trigger('pause');
+  console.log(response);
+
+  if (response.tracks.items.length>0){
+    $('.title').empty();
+    $('.author').empty();
+    
+    if ($('.btn-play').hasClass("playing")){
+      $('.btn-play').removeClass("playing");
+      $('.js-player').trigger('pause');
+    }
+
+
+    $('.btn-more').removeClass('disabled');
+
+    $('.title').text(response.tracks.items[0].name);
+    $.each(response.tracks.items[0].artists, function(key, value){
+      $('.author').append("<a href='#' class='artist-link' data-name='"+value.href+"'>"+value.name+"</a> ");
+    })
+    $('.img-cover').removeClass('data-img-error');
+    $('.img-cover').attr('src', response.tracks.items[0].album.images[0].url);
+    $('.js-player').attr('src', response.tracks.items[0].preview_url);
+
+    $('.artist-link').click(function(){
+      call_Ajax('artist');
+    })
+
+    $('.btn-more').click(function(){
+      showMoresongs(response);
+    })
   }
-
-
-  $('.btn-more').removeClass('disabled');
-
-  $('.title').text(response.tracks.items[0].name);
-  $.each(response.tracks.items[0].artists, function(key, value){
-    $('.author').append("<a href='#' class='artist-link' data-name='"+value.href+"'>"+value.name+"</a> ");
-  })
-  $('.img-cover').attr('src', response.tracks.items[0].album.images[0].url);
-  $('.js-player').attr('src', response.tracks.items[0].preview_url);
-
-  $('.artist-link').click(function(){
-    call_Ajax('artist');
-  })
-
-  $('.btn-more').click(function(){
-    showMoresongs(response);
-  })
+  else{
+    $('.title').text('no title');
+    $('.author').text('no author');
+    $('.img-cover').attr('src', 'http://diymusician.cdbaby.com/wp-content/uploads/2015/11/spotify_2014_0-1.jpg');
+    $('.img-cover').addClass('data-img-error');
+    
+  }
 }
 
 
@@ -103,7 +117,6 @@ function showMoresongs(response){
   $('.link-more-songs').click(function(){
     $(".js-modal").modal("hide");
     $('.track-search').val($(event.currentTarget).attr('data-title'));
-    $('.js-player').trigger('play');
     call_Ajax('track');
   })
 
@@ -112,6 +125,7 @@ function showMoresongs(response){
 
 
 function showArtist(response){
+  console.log("showArtists");
    var genres="";
    
    $('.modal-body').text("");
@@ -128,13 +142,24 @@ function showArtist(response){
     html='<img src="http://diymusician.cdbaby.com/wp-content/uploads/2015/11/spotify_2014_0-1.jpg">';
   }
 
-  $('.modal-body').html(html);
-  $('.modal-body').css("text-align", "center");
   $('.modal-header').html("<h2>"+response.name.toUpperCase()+"<br>"
-                          +" <small>Genres: "+genres.toUpperCase()
-                          +" - Followers: "+response.followers.total
+                          +" <small>Genres: "+genres
+                          +"<br>Followers: "+response.followers.total
                           +" - Popularity: "+response.popularity+"</small></h2>");
-  $(".js-modal").modal("show");
+  $('.modal-body').html(html);
+  $('.modal-body').append("<button class='btn btn-more-from-artist'>More results from "+response.name+"</button>");
+  $('.modal-body').css("text-align", "center");
+  
+  $('.btn-more-from-artist').click(function(){
+    showAlbums(response);
+  })
+
+  $("#modal1").modal("show");
 }
 
 
+function showAlbums(response){
+  console.log("showAlbums");
+   console.log(response);
+  $("#modal2").modal("show");
+}
