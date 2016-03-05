@@ -1,0 +1,61 @@
+<h1>Pokédex</h1>
+
+<!-- List of pokemon -->
+<ul class="pokedex-list">
+<%counter=1%>
+  <% @pokemon.each do |pkmn| %>
+    <li>
+      <button class="js-show-pokemon btn btn-link"
+          data-pokemon-uri="<%= pkmn["resource_uri"] %>">
+        <%=counter%>.- <%= pkmn["name"].capitalize %>
+      </button>
+    </li>
+    <%counter=counter+1%>
+  <% end %>
+</ul>
+
+
+<!-- Pokemon modal view (hidden at first) -->
+<div class="modal fade js-pokemon-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+
+        <h3 class="modal-title" style="height:80px;">
+          <span class="js-pkmn-name">Feraligtr</span>
+          <small class="js-pkmn-number">#160</small>
+        </h3>
+      </div><!-- .modal-header -->
+
+
+      <div class="modal-body">
+        <span class="poke-image" style="position:absolute; right:40px; top:-100px; width:100px; height:100px; background-size: cover; z-index:99;"></span>
+        <dl class="dl-horizontal">
+          <dt>Description</dt>
+          <dd class="js-pkmn-description">23</dd>
+          <dt>Height</dt>
+          <dd class="js-pkmn-height">23</dd>
+          <dt>Weight</dt>
+          <dd class="js-pkmn-weight">888</dd>
+          <dt>Type</dt>
+          <dd class="js-pkmn-type"></dd>
+          <dt>Speed</dt>
+          <dd class="js-pkmn-speed">888</dd>
+          <hr>
+          <dt>Hint Points</dt>
+          <dd class="js-pkmn-hp">888</dd>
+          <dt>Attack / Defense</dt>
+          <dd class="js-pkmn-attack-defense">888</dd>
+          <dt>Special Attack / Defense</dt>
+          <dd class="js-pkmn-spc-attack-defense">888</dd>
+        </dl>
+        <div class="evolution-button"></div>
+      </div><!-- .modal-body -->
+
+    </div><!-- .modal-content -->
+  </div><!-- .modal-dialog -->
+</div><!-- .modal -->

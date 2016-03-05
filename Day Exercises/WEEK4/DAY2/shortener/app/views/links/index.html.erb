@@ -1,0 +1,4 @@
+<h1>LIST OF URLS</h1>
+<%@links.each do |url|%>
+<p><%= url.url_original%> = <a href="<%= url.url_shorted%>"><%= url.url_shorted%></a></p>
+<%end%>

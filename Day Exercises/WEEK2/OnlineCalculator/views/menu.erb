@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <title>Add | Online Calculator</title>
+</head>
+<body>
+<img src='./logo.png' width='100'><br>
+<p>New York: <%= @newyork %></p>
+<p>Tokio: <%= @tokio %></p>
+<p>Moscow: <%= @moscow %></p>
+  <form action="/calculate" method="POST">
+    <h1>CALCULATOR</h1>
+    <input type="number" name="first_number" placeholder="1st number" value="<%= @prev %>"> &
+    <input type="number" name="second_number" placeholder="2nd number">
+
+    <button type="submit" name="operation" value="addition">ADD</button>
+    <button type="submit" name="operation" value="subtract">SUBSTRACT</button>
+    <button type="submit" name="operation" value="multiply">MULTIPLY</button>
+    <button type="submit" name="operation" value="division">DIVIDE</button>
+  </form>
+
+</body>
+</html>

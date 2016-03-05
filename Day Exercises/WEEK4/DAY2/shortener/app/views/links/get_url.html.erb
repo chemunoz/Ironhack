@@ -1,0 +1,12 @@
+<body onload="loadweb()">
+  <p>Loading...</p>
+  <p>(if doesn't works click on ) <a href='<%=@linka.url_original%>' target="_parent">LINK</a></p>
+  <button onclick="http://localhost:3000/urls">RETURN URLs</button>
+
+<script>
+function loadweb() {
+    window.open('<%=@linka.url_original%>', '_parent');
+}
+</script>
+
+</body>

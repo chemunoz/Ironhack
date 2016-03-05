@@ -1,0 +1,10 @@
+<h1>USERS</h1>
+<ul>
+
+  <%@users.each do |user| %>
+    <li>
+      <%=user.name%> - <%=link_to("User Details", user_path(user))%> - <%=link_to("Create a Product", new_user_product_path(user))%>
+    </li>
+  <%end%>
+
+</ul>

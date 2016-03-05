@@ -1,0 +1,25 @@
+body
+{
+  background:#fff;
+  color: #000;
+}
+
+.page-header{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #fff;
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.main
+{
+  background: #ed564b;
+  color: #fff;
+  text-align: center;
+}
+
+
+footer
+{
+  background: #F8C3D2;
+}

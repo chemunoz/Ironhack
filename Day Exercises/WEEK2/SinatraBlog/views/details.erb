@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>POSTS DETAILS</title>
+  <style type="text/css">
+    body
+    {
+      width: 80%;
+      margin: 0px auto;
+    }
+    h1
+    {
+      color:#0F0;
+      border: solid 1px;
+      border-radius: 10px;
+      background-color: #4A6FFF;
+    }
+    p
+    {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <h1><%= @post_detail[@id.to_i].title %> - <%= @post_detail[@id.to_i].date.strftime("(%d/%b/%Y  ::  %H:%M:%S)") %></h1>
+  <p><%= @post_detail[@id.to_i].post %></p>
+  <p><%= @post_detail[@id.to_i].author %>(<%= @post_detail[@id.to_i].category %>)</p>
+</body>
+</html>

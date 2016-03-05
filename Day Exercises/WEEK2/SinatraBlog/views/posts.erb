@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <title>LIST OF POSTS</title>
+</head>
+<body>
+  <%@posts.each_with_index do |post, index| %>
+  <h1><a href="/post_details/<%= index %>"><%= post.title %></a></h1>
+<% end %>
+<a href="/new_post"><img src='./newpostbutton.png' width='100'></a>
+</body>
+</html>

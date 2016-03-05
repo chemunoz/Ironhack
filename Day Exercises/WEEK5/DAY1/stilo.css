@@ -1,0 +1,15 @@
+.wrapp{
+  width: 80%;
+  margin: 0 auto;
+}
+.container{
+  border: 1px solid #f8d3a2;
+  text-align: center;
+  padding: 2em;
+}
+
+.form-element{
+  width: 15em;
+  height: 1em;
+  font-size: 1em;
+}
