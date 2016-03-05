@@ -1,0 +1,14 @@
+<%= flash_message%></p>
+
+<h1>Ironhack Project: <%=@project.name%></h1>
+<ul>
+  <%@entries.each do |entry|%>
+  <li>
+    <%= entry.hours%> h <%=entry.minutes%> m - <%=entry.date%> - <%= link_to 'Edit Entry', edit_project_entry_path(@project.id, entry.id)%>
+    <%= link_to('Delete', project_entry_path(@project, entry), method: :delete, data:{confirm: 'Are you sure?'})%>
+  </li>
+  <%end%>
+</ul>
+
+<%= link_to 'Projects', projects_path%>
+<%= link_to 'New Entry', new_project_entry_path(@project)%>

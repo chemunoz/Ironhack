@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+ box-sizing: border-box;
+}
+
+html
+{
+  font-size: 62.5%;
+}
+
+.container 
+{
+  /*background-color: #677DFF;*/
+  background: #00ff00 url("wallpaper.jpg") no-repeat; 
+  width: 60%;
+  height: 575px;
+  margin: 0px auto;
+  border-radius: 10px;
+  color: white;
+  padding: 30px;
+  font-family: Open+Sans, Sans;
+  font-size: 2rem;
+  text-align: justify;
+}
+
+.menu li
+{
+  list-style: none;
+  display: inline;
+  border: solid white;
+  position: relative;
+}
+
+.menu
+{
+  background-color: green;
+  height: 5rem;
+  vertical-align: middle;
+}

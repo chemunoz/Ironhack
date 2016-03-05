@@ -1,0 +1,16 @@
+.padd{
+  padding: 50px;
+}
+
+.flash{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.flash_ok{
+  background-color: #0F0;
+}
+
+.flash_bad{
+  background-color: #F00;
+}

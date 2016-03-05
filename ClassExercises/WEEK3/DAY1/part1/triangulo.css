@@ -1,0 +1,30 @@
+*
+{
+  box-sizing: border-box;
+}
+
+.grid
+{
+  display: block;
+  border: 1px solid red;
+  height: 50px;
+  width: 100%;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col
+{
+  width: 33.3333%;
+  border: 1px solid blue;
+  height: 50px;
+  float: left;
+}
+
+
+.item
+{
+  margin: 0px;
+  height: 50px;
+  border: alicebox;
+}

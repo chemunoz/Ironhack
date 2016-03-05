@@ -1,0 +1,47 @@
+*{
+ box-sizing: border-box;
+}
+
+.container 
+{
+  background-color: #677DFF;
+  width: 60%;
+  height: 400px;
+  margin: 0px auto;
+}
+
+.row
+{
+  width: 90%;
+  height: 500px;
+  background-color: green;
+}
+
+.col
+{
+  width: 33%;
+  height: 200px;
+  background-color: red;
+  display: inline;
+  float: left;
+  border: solid 5px;
+}
+
+@media screen and (min-width: 800px)
+{
+   .container
+   {
+    background-color: lightgreen;
+    border-radius: 25px;
+  }
+}
+
+@media screen and (max-width: 600px)
+{
+  .container
+  {
+    background-color: aliceblue;
+    border-radius: 50%;
+  }
+}
+

@@ -1,0 +1,7 @@
+<%=flash_message%>
+
+<%=form_for @person do |f|%>
+  <%=f.label :name%>
+  <%=f.text_field :name%>
+  <%=f.submit 'Save'%>
+<%end%>

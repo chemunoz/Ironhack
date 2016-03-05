@@ -1,0 +1,17 @@
+<div class="container is-fluid">
+<h1>YOUR PROJECTS</h1>
+<ul>
+
+  <%@projects.each do |proj| %>
+    <li>
+      <%=link_to(proj.name, project_entries_path(proj))%>
+        <% if proj.description.present?%>
+        - <%=proj.description%>
+        <%end%>
+    </li>
+  <%end%>
+
+</ul>
+
+<p>The total hours worked this month is <%= @current_month_hours%></p>
+</div>
