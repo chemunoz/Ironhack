@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Amaranth);
+
+*{
+	font-family: Amaranth, sans-serif;
+} 
+
+#wrap{
+	width: 80%;
+	margin: 0px auto;
+	background-image: url("./imags/curiosity_rover.jpg");
+	border-radius: 10px;
+	padding: 10px;	
+}
+
+#curiosity{
+	width: 200px;
+	height: 150px;
+	border-radius: 10px;
+}
+
+
+
+/*CONTROLS*/
+#controls
+{
+	float: left;
+}
+.control{
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+
+#forward, #back{
+	/*background-color: #793030;*/
+	width: 200px;
+	text-align: center;
+}
+
+#turn{
+	width: 200px;
+	text-align: center;
+}
+
+#current_direction
+{
+	display: block;
+	width: 400px;
+}
+#sequence_controls
+{
+	width: 550px;
+	height: 100px;
+}
+
+#ordersButton
+{
+	width: 100px;
+	height: 100px;
+}
+
+
+
+/*MOVEMENTS BOARD*/
+#board
+{
+	position: relative;	
+	/*float: left;*/
+	display: block;
+	width: 400px;
+	height: 300px;
+	
+	background-color: #ccc;
+	border: solid 1px #000;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#board_title
+{
+	position: relative;
+	/*float: left;*/
+	display: block;
+	top: 10px;
+	width: 250px;
+}
+
+
+
+
+
+/*MOVEMENTS MAP*/
+#wrap_table
+{
+	float: right;
+}
+
+table, td, tr
+{
+	border: 1px solid #000;
+}
+
+#f1c1
+{
+	background-color: #F00;
+}
+
+td, tr
+{
+	width: 25px;
+	height: 25px;
+}

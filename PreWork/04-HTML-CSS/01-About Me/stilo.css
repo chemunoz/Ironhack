@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Amaranth);
+*{
+	background-color: slategrey;
+	font-size: 25px;
+	color: #000000;
+	font-family: Amaranth;
+	text-align: justify;
+}
+header{
+	background-color: green;
+	height: 70px;
+	border-radius: 15px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 35px;
+	color: #FFFFFF;
+}
+
+
+nav{
+	margin: 5px auto;
+	background-color: aquamarine;
+	text-align: right;
+}
+a{
+	background-color: aquamarine;	
+}
+
+footer{
+	text-align: right;
+}
+img{
+	margin: 10px;
+}
+
+#contenedor{
+	width: 90%;
+	margin: 0px auto;
+}
+
+.img_post{
+	border-radius: 50px;
+	width: 200px;
+	margin: 10 10 50 10;
+}
+
+.img_profile{
+	border-radius: 140px;
+}
+
+.img_ta{
+	border-radius: 15px;
+	width: 200px;
+}
+
+.img_can{
+	border-radius: 15px;
+	width: 90%;
+}

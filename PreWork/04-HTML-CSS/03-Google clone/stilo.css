@@ -1,0 +1,165 @@
+
+body, td, a, p, .h {
+    font-family: arial,sans-serif;
+}
+/*Opciones de usuario*/
+#option_links{
+	position: relative;
+	top: 10px;
+	right: 20px;
+	display: block;
+	width: 100%;
+	height: 80px;
+	text-align: right;
+	vertical-align: middle;
+
+	/*background-color: #8A8B1C;*/
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+	font-size: 13px;
+	display: inline-block;
+	line-height: 24px;
+	outline: none;
+	vertical-align: middle;
+	padding-right: 15px;
+}
+
+a:visited {
+    color: #609;
+}
+
+#google_products{
+
+}
+
+#session_button{
+	border: 1px solid #4285f4;
+	color: #FFF;
+    font-weight: bold;
+    outline: none;
+	background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+	display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/*Zona logo y searchbox*/
+#logo_layer{
+	display: block;
+	height: 233px;
+	margin-top: 89px;
+	text-align: center;
+	/*background-color: #0D8391;*/
+}
+
+#logo{
+}
+
+#spain{
+	position: relative;
+	display: inline;
+    top: 0px;
+    left: -60px;
+	color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    white-space: nowrap;
+
+    /*background-color: #6DA318;*/
+ }
+
+#search_box{
+	position: relative;
+	top: 30px;
+	width: 541px;
+	height: 38px;
+	border-style:solid;
+	border-width:thin;
+	border-color:#B4B4B4;
+	margin: 0px auto;
+	/*background-color: #680808;*/
+}
+
+#micro{
+	position: relative;
+	top: 8px;
+	left: 250px;
+	width: 17px;
+	height: 23px;
+	/*background-color: #F05454;*/
+}
+
+
+
+
+/*Zona botones*/
+#buttons_layer{
+	position: relative;
+	top: 50px;
+	height: 50px;
+	margin: 0px auto;
+	/*background-color: #4A781D;*/
+}
+
+
+.botones{
+	display:inline;
+	background-color: #CCC;
+	height: 36px;
+	width: 153px;
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	border-radius: 2px;
+	color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    /*margin: 11px 4px;*/
+    /*min-width: 54px;*/
+    padding: 0 16px;
+    text-align: center;
+}
+
+/*Zona footer*/
+#footer_layer{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 35px;
+	font-size: small;
+	color: #222;
+	background: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+	bottom: 15px;
+	font-size: 10pt;
+	margin-left: -10px;	
+}
+
+#left_footer{
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+	float: left;	
+	white-space: nowrap;
+	margin-left:30px
+}
+
+#right_footer{
+	position: absolute;
+	bottom: 20px;
+	right: 0px;
+	float: right;
+	white-space: nowrap;
+
+	margin-right:30px;
+
+}
+#left_footer a, #right_footer a{
+	top: 1px;
+	color: #666;
+}

@@ -1,0 +1,169 @@
+<html>
+<head>
+	<title>Mars Rover Kata!</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="rover.js"></script>
+	<link rel="stylesheet" type="text/css" href="stilo.css">
+</head>
+<body>
+	<div id="wrap">
+		<div id="wrap_table">
+			<table>
+				<tr id="f1">
+					<td id="f1c1"></td>
+					<td id="f1c2"></td>
+					<td id="f1c3"></td>
+					<td id="f1c4"></td>
+					<td id="f1c5"></td>
+					<td id="f1c6"></td>
+					<td id="f1c7"></td>
+					<td id="f1c8"></td>
+					<td id="f1c9"></td>
+					<td id="f1c10"></td>
+					</td>
+				</tr>
+				<tr id="f2">
+					<td id="f2c1"></td>
+					<td id="f2c2"></td>
+					<td id="f2c3"></td>
+					<td id="f2c4"></td>
+					<td id="f2c5"></td>
+					<td id="f2c6"></td>
+					<td id="f2c7"></td>
+					<td id="f2c8"></td>
+					<td id="f2c9"></td>
+					<td id="f2c10"></td>
+					</td>
+				</tr>
+				<tr id="f3">
+					<td id="f3c1"></td>
+					<td id="f3c2"></td>
+					<td id="f3c3"></td>
+					<td id="f3c4"></td>
+					<td id="f3c5"></td>
+					<td id="f3c6"></td>
+					<td id="f3c7"></td>
+					<td id="f3c8"></td>
+					<td id="f3c9"></td>	
+					<td id="f3c10"></td>
+					</td>
+				</tr>
+				<tr id="f4">
+					<td id="f4c1"></td>
+					<td id="f4c2"></td>
+					<td id="f4c3"></td>
+					<td id="f4c4"></td>
+					<td id="f4c5"></td>
+					<td id="f4c6"></td>
+					<td id="f4c7"></td>
+					<td id="f4c8"></td>
+					<td id="f4c9"></td>
+					<td id="f4c10"></td>
+					</td>
+				</tr>
+				<tr id="f5">
+					<td id="f5c1"></td>
+					<td id="f5c2"></td>
+					<td id="f5c3"></td>
+					<td id="f5c4"></td>
+					<td id="f5c5"></td>
+					<td id="f5c6"></td>
+					<td id="f5c7"></td>
+					<td id="f5c8"></td>
+					<td id="f5c9"></td>
+					<td id="f5c10"></td>
+					</td>
+				</tr>
+				<tr id="f6">
+					<td id="f6c1"></td>
+					<td id="f6c2"></td>
+					<td id="f6c3"></td>
+					<td id="f6c4"></td>
+					<td id="f6c5"></td>
+					<td id="f6c6"></td>
+					<td id="f6c7"></td>
+					<td id="f6c8"></td>
+					<td id="f6c9"></td>
+					<td id="f6c10"></td>
+					</td>
+				</tr>
+				<tr id="f7">
+					<td id="f7c1"></td>
+					<td id="f7c2"></td>
+					<td id="f7c3"></td>
+					<td id="f7c4"></td>
+					<td id="f7c5"></td>
+					<td id="f7c6"></td>
+					<td id="f7c7"></td>
+					<td id="f7c8"></td>
+					<td id="f7c9"></td>
+					<td id="f7c10"></td>
+					</td>
+				</tr>
+				<tr id="f8">
+					<td id="f8c1"></td>
+					<td id="f8c2"></td>
+					<td id="f8c3"></td>
+					<td id="f8c4"></td>
+					<td id="f8c5"></td>
+					<td id="f8c6"></td>
+					<td id="f8c7"></td>
+					<td id="f8c8"></td>
+					<td id="f8c9"></td>
+					<td id="f8c10"></td>
+					</td>
+				</tr>
+				<tr id="f9">
+					<td id="f9c1"></td>
+					<td id="f9c2"></td>
+					<td id="f9c3"></td>
+					<td id="f9c4"></td>
+					<td id="f9c5"></td>
+					<td id="f9c6"></td>
+					<td id="f9c7"></td>
+					<td id="f9c8"></td>
+					<td id="f9c9"></td>
+					<td id="f9c10"></td>
+					</td>
+				</tr>
+				<tr id="f1">
+					<td id="f10c1"></td>
+					<td id="f10c2"></td>
+					<td id="f10c3"></td>
+					<td id="f10c4"></td>
+					<td id="f10c5"></td>
+					<td id="f10c6"></td>
+					<td id="f10c7"></td>
+					<td id="f10c8"></td>
+					<td id="f10c9"></td>
+					<td id="f10c10"></td>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<h2>MARS ROVER DIRECTION DASHBOARD</h2>
+		<!--<img id="curiosity" src="./imags/curiosity_rover.jpg">-->
+		<div id="controls">
+			<div id="forward"><img class="control" src="./imags/go_forward.png" onclick="goForward(myRover); return false;" alt="FOWARD"></div>
+			<div id="turn">
+				<img class="control" src="./imags/turn_left.png" onclick="turnLeft(myRover); return false;" alt="LEFT">
+				<img class="control" src="./imags/turn_right.png" onclick="turnRight(myRover); return false;" alt="RIGHT">
+			</div>
+			<div id="back"><img class="control" src="./imags/go_back.png" onclick="goBack(myRover); return false;" alt="BACK"></div>
+		</div>
+		<div id="sequence_controls">
+			<input id="sequence"> <input type="button" id='ordersButton' value="SEND" onclick="sendOrders(myRover)">
+			<p>Write above the movements you wish</p>
+			<p>(f=Forward, b=back, r=turn right, l=turn left)</p>
+			
+		</div>
+		<div id="current_direction">CURRENT DIRECTION:&nbsp;&nbsp;&nbsp;<img class="control" id="direction_img" src="./imags/current_up.png" onclick="goBack(myRover)"></div>
+		
+		<div id="board_title">
+			<span>LAST 15 MOVEMENTS:</span>
+			<div id="board"></div></div>
+		<p>(Note: You can see all the movements in your browser console)</p>
+	</div>
+</body>
+</html>
