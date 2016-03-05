@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <title>PELIS MOLONAS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="alert('')">
+  <H1>9 MOVIES ABOUT "<%= @text_searched.upcase%>"</H1>
+  <% if @results==nil %>
+  <p><h2>NADA</h2></p>
+  <% else %>
+  
+    <p>Which one was filmed in <%= @random_year%></p>
+    <a href="/"><button  value="return">RETURN</button></a>
+    <% @results.each do |key, value| %>
+    <form action="/answer" method="POST">
+      <div class="content">
+        <img src="<%= key[:poster].to_s %>" onclick="alert('<%= key[:year].to_s%>')"><br>
+        <input type="hidden" name="film_answered" value="<%= key[:year]%>">
+        <input type="hidden" name="film_question" value="<%= @random_year%>">
+        <button type="submit" value="btn">SEND</button>
+        </div>
+      </form>
+    <% end %>
+    <% end %>
+  
+</body>
+</html>

@@ -1,0 +1,32 @@
+<style>
+
+</style>
+
+<header>
+  <h1>CONCERTS</h1>
+</header>
+<section class="concerts_today">
+  <h3>CONCERTS TODAY</h3>
+  <ul>
+    <%@concerts.each do |concert| %>
+      <li>
+        <%=concert.artist%> - <%=concert.date%> - <%=link_to("Concert Details", concert_path(concert))%>
+      </li>
+    <%end%>
+  </ul>
+</section>
+
+<aside class="concerts_to_come">
+    <h3>CONCERTS TO COME</h3>
+    <ul>
+      <%@concerts_to_come.each do |concert| %>
+        <li>
+          <%=concert.artist%> - <%=concert.date%> - <%=link_to("Concert Details", concert_path(concert))%>
+        </li>
+      <%end%>
+    </ul>
+</aside>
+<div class="cut"></div>
+<div class="foot_div">
+<%=link_to("Create a Concert", new_concert_path)%>
+</div>

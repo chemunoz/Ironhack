@@ -1,0 +1,18 @@
+<p>PRICE</p>
+
+<form action="/concerts/price_send" method="post">
+  <input type="text" placeholder="Maximum price" name="price"></input>
+  <input type="submit" name="commit" value="Send Request">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+</form>
+
+<%if @concerts_price!=nil%>
+<p>Concerts minus or equal to <%=@price_searched%>:</p>
+<ul>
+  <%@concerts_price.each do |concer|%>
+    <li>
+      <%= concer.artist%> (<%= concer.price%>€)
+    </li>
+  <%end%>
+<%end%>
+</ul>

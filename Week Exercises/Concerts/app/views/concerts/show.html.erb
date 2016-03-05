@@ -1,0 +1,33 @@
+<h1 class="red-title">CONCERT DETAILS</h1>
+<div class="form-container">
+  <p>Artist: <%= @concert.artist %></p>
+  <p>Venue: <%= @concert.venue %></p>
+  <p>City: <%= @concert.city %></p>
+  <p>Date: <%= @concert.date %></p>
+  <p>Price: <%= @concert.price %></p>
+  <p>Description: <%= @concert.description %></p>
+  <br>
+
+
+  <%=link_to('Back to concerts', root_path)%>
+  <br><br>
+
+
+  <%= form_for [@concert, @comment] do |f|%>
+    <%= f.label 'Comments:'%>
+    <%= f.text_area :comment, placeholder: 'Write a comment', class:'form-control'%>
+    <br>
+    <%= f.submit 'Send Comment'%>
+  <%end%>
+  <br>
+
+
+  <p>Comments:</p>
+  <ul>
+    <%@comments_in_bbdd.each do |comm|%>
+      <li>
+        <%= comm.comment%>
+      </li>
+    <%end%>
+  </ul>
+</div>

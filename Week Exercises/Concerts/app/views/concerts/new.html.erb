@@ -1,0 +1,31 @@
+<h1 class="red-title">Creating a new Concert</h1>
+
+<%@concert.errors.full_messages.each do |message|%>
+  <div class="be-red white">
+    *<%=message%>
+  </div>
+<%end%>
+<div class="form-container">
+  <%= form_for [@concert] do |f|%>
+    <%= f.label :artist%>
+    <%= f.text_field :artist, placeholder: 'Artist', class:"form-control"%>
+    <br>
+    <%= f.label :venue%>
+    <%= f.text_field :venue, placeholder: 'Venue', class:'form-control'%>
+    <br>
+    <%= f.label :city%>
+    <%= f.number_field :city, placeholder: 'City', class:'form-control'%>
+    <br>
+    <%= f.label :date%>
+    <%= f.date_field :date, placeholder: 'Date', class:'form-control'%>
+    <br>
+    <%= f.label :price%>
+    <%= f.number_field :price, size:4, step: 0.5, placeholder:'Price', class:'form-control'%>
+    <br>
+    <%= f.label :description%>
+    <%= f.text_field :description, placeholder: 'Description', class:'form-control'%>
+    <br>
+    <%= f.submit 'Save'%>
+  <%end%>
+</div>
+<%=link_to('Back to concerts', root_path)%>

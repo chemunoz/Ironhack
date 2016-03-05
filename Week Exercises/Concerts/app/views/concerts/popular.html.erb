@@ -1,0 +1,8 @@
+<h1>POPULAR CONCERTS</h1>
+<ul>
+  <%@con_com.each do |concer, count|%>
+    <li>
+      <%= concer.artist%> - <%=count%>
+    </li>
+  <%end%>
+</ul>

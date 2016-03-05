@@ -1,0 +1,65 @@
+// Place all the styles related to the site controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.initial_header{
+}
+
+.initial_header span{
+  text-align: center;
+  display: block;
+  font-size: 36px;
+}
+
+.menu{
+  list-style: none;
+}
+
+.menu > li{
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: auto 5px auto 5px;
+}
+.menu >li > a{
+  text-decoration: none;
+}
+
+.image_container{
+  width: 100%;
+  min-height: 300px;
+  background-color: #FED67A;
+  background-image: url('concert-audience.jpg');
+  border-radius: 10px;
+  background-size: contain;
+}
+
+.red-title{
+  background-color: #E74C3C;
+  padding: 10px;
+  border-radius: 5px;
+  color: #FFF;
+}
+
+.form-container{
+  width: 80%;
+  margin: 0 auto;
+}
+.form-control{
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  width: 100%;
+  display: block;
+  padding: 10px 0px;
+  font-size: 1.2em;
+}

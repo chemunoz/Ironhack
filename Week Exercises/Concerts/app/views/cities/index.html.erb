@@ -1,0 +1,10 @@
+<h1 class="red-title">LIST OF CITIES</h1>
+<div class="form-container">
+  <ul>
+    <%@cities_in_ddbb.each do |city|%>
+      <li>
+        <%= city.city_name%>
+      </li>
+    <%end%>
+  </ul>
+</div>

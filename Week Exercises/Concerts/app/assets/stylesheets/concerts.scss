@@ -1,0 +1,23 @@
+// Place all the styles related to the concerts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.concerts_today{
+  float: left;
+  width: 50%;
+  background-color: #F00;
+}
+
+.concerts_to_come{
+  float: right;
+  width: 50%;
+  background-color: #F0F;
+ }
+
+.foot_div{
+  width: 100%;
+  background-color: #FF0;
+ }
+
+.cut{
+  clear: both;
+ }
