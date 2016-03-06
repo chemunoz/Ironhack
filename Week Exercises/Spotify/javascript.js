@@ -16,6 +16,10 @@ $('.btn-play').click(function(){
     }
   })
 
+$('#openBtn').click(function(){
+  $('#myModal').modal({show:true})
+});
+
 // Have printTime be called when the time is updated
 $('.js-player').on('timeupdate', printTime);
 
@@ -41,6 +45,9 @@ function call_Ajax(type){
       ajax_url=$(event.currentTarget).attr('data-name');
       ajax_type=showArtist;
       break;
+    case 'albums':
+      ajax_url='https://api.spotify.com/v1/artists/'+$('.btn-more-from-artist').attr('data-artist')+'/albums',
+      ajax_type=showAlbums;
   }
 
   $.ajax({
@@ -101,7 +108,7 @@ function showMoresongs(response){
     var artis="";
     
     $.each(response.tracks.items[key].artists, function(artist_key, artist_val){
-      artis=artis + artist_val.name;
+      artis=artis + artist_val.name+" ";
     })
     html=["<li data-title='"+artis+" "+val.name
                             +"' class='link-more-songs'><a href='#'>"
@@ -112,7 +119,10 @@ function showMoresongs(response){
   $('.modal-body').prepend("<ul>");
   $('.modal-body').append("</ul>");
   $('.modal-body').css("text-align", "left");
-  $('.modal-header').html("<h2>MORE RESULTS</h2>");
+  $('.modal-header').html(
+                      "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>"
+                      +"<span>&times;</span></button>"
+                      +"<h2>MORE RESULTS</h2>");
 
   $('.link-more-songs').click(function(){
     $(".js-modal").modal("hide");
@@ -142,24 +152,36 @@ function showArtist(response){
     html='<img src="http://diymusician.cdbaby.com/wp-content/uploads/2015/11/spotify_2014_0-1.jpg">';
   }
 
-  $('.modal-header').html("<h2>"+response.name.toUpperCase()+"<br>"
-                          +" <small>Genres: "+genres
-                          +"<br>Followers: "+response.followers.total
-                          +" - Popularity: "+response.popularity+"</small></h2>");
+  $('.modal-header').html("<button type='button' class='close' data-dismiss='modal' aria-label='Close'>"
+                            +"<span>&times;</span></button>"
+                            +"<h2>"+response.name.toUpperCase()+"<br>"
+                            +" <small>Genres: "+genres
+                            +"<br>Followers: "+response.followers.total
+                            +" - Popularity: "+response.popularity+"</small></h2>");
   $('.modal-body').html(html);
-  $('.modal-body').append("<button class='btn btn-more-from-artist'>More results from "+response.name+"</button>");
+  $('.modal-body').append("<button class='btn btn-more-from-artist' data-artist='"+response.id+"'>More results from "+response.name+"</button>");
   $('.modal-body').css("text-align", "center");
   
   $('.btn-more-from-artist').click(function(){
-    showAlbums(response);
+    call_Ajax('albums');
   })
 
-  $("#modal1").modal("show");
+  $(".js-modal").modal("show");
 }
 
 
 function showAlbums(response){
   console.log("showAlbums");
-   console.log(response);
-  $("#modal2").modal("show");
+  console.log(response);
+  $('.body2').empty();
+  $.each(response.items, function(key,val){
+    var html=[
+              "<li class='li-albums' data-value='"+val.id+"'>",//"<a>"+val.name+"</a>",
+              "<br><img src='"+val.images[1].url+"' alt='"+val.name+"' class='img-album'>",
+              "<br>"+val.name,
+              "<ul class='ul-tracks trac"+val.id+"'></ul></li>"].join("\n");
+
+              $('.body2').append('<ul>'+html+'</ul>');
+            })
+  $('#myModal2').modal({show:true})
 }
