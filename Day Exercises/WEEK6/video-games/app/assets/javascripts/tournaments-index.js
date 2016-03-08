@@ -1,4 +1,6 @@
 function tournamentsIndex () {
+  $('.tourney-list li').remove()
+
   var request = $.get('/api/tournaments.json')
   request.fail(showError)
   request.done(showTournaments)
@@ -24,4 +26,8 @@ function tournamentsIndex () {
 
     $('[data-hook~=tourney-add]').removeClass('hidden')
   }
+
+
+
+
 }

@@ -9697,3 +9697,2967 @@ Started GET "/" for ::1 at 2016-03-07 18:08:58 +0100
 Processing by TournamentsController#index as */*
   Rendered tournaments/index.html.erb within layouts/application (3.8ms)
 Completed 200 OK in 121ms (Views: 120.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 18:16:26 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 118ms (Views: 118.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 18:16:26 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 18:16:26 +0100
+
+
+Started POST "/api/tournaments" for ::1 at 2016-03-07 18:16:40 +0100
+Processing by Api::TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X2NZqgBrrmgKPN1u1Vg5bGEkWy/NNozjFhEIXW13/tjM9Rq0J25GFiTHxWw4NEGAYyHsxrvLwfyunjcdGnq//g==", "tournament"=>{"name"=>"arena 1"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "arena 1"], ["created_at", "2016-03-07 17:16:40.460177"], ["updated_at", "2016-03-07 17:16:40.460177"]]
+  [1m[35m (9.5ms)[0m  commit transaction
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 18:20:59 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 68ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 18:20:59 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.5ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 18ms (Views: 8.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 18:20:59 +0100
+
+
+Started POST "/api/tournaments" for ::1 at 2016-03-07 18:21:14 +0100
+Processing by Api::TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sQaFCQS6waWU1AcH2iUkia9TuTAENLHvCJBR8kWfhdIikMYXI78p27ovHwU3SVxlrVYO2XLJ/PCwH26yMpLE9A==", "tournament"=>{"name"=>"Hola"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hola"], ["created_at", "2016-03-07 17:21:14.846384"], ["updated_at", "2016-03-07 17:21:14.846384"]]
+  [1m[35m (26.5ms)[0m  commit transaction
+Completed 200 OK in 34ms (Views: 1.1ms | ActiveRecord: 28.9ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 18:21:17 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 18:21:17 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 18:21:17 +0100
+
+
+Started POST "/api/tournaments" for ::1 at 2016-03-07 18:21:43 +0100
+Processing by Api::TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SI4tjhC1Tk/ktCnAzZYqukjTGvHfXcTG3rVrTGldUhbbGG6QN7CmMcpPMcIg+lJWStatGKmgidlmOlQMHlATMA==", "tournament"=>{"name"=>"Mariornnnnn"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Mariornnnnn"], ["created_at", "2016-03-07 17:21:43.346851"], ["updated_at", "2016-03-07 17:21:43.346851"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Completed 201 Created in 25ms (Views: 0.5ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/api/tournaments" for ::1 at 2016-03-07 18:24:50 +0100
+Processing by Api::TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SI4tjhC1Tk/ktCnAzZYqukjTGvHfXcTG3rVrTGldUhbbGG6QN7CmMcpPMcIg+lJWStatGKmgidlmOlQMHlATMA==", "tournament"=>{"name"=>"Hoaoal"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Hoaoal"], ["created_at", "2016-03-07 17:24:50.577732"], ["updated_at", "2016-03-07 17:24:50.577732"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:07:01 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 424ms (Views: 423.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments-index.self-97ec67bf8e4c635c458f81513a87e5f51c09b425f3d88cf9176f11e859d5cec7.js?body=1" for ::1 at 2016-03-07 19:07:01 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:07:01 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:07:01 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:07:01 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:07:01 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:07:01 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:07:01 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:07:02 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:07:02 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:07:02 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:07:02 +0100
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2016-03-07 19:07:02 +0100
+
+
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for ::1 at 2016-03-07 19:07:02 +0100
+
+
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for ::1 at 2016-03-07 19:07:02 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:07:02 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:07:07 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 49ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:07:07 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.4ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:08:11 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 72ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:08:11 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.9ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:08:11 +0100
+
+
+Started GET "/" for ::1 at 2016-03-07 19:09:04 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 282ms (Views: 281.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:09:05 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:09:05 +0100
+
+
+Started GET "/" for ::1 at 2016-03-07 19:27:14 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 565ms (Views: 564.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/assets/tournament-new.self-a934dfdfa5200d2800e14677945db4137eb98eee008aab97703ecc247ab7214f.js?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/assets/tournaments.self-7813229a93186d59da197d3ae39aa82796f83134cf24d0577f0097b0580b752b.js?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:27:15 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:27:15 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:27:16 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:27:26 +0100
+
+
+Started GET "/" for ::1 at 2016-03-07 19:27:30 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 453ms (Views: 452.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/tournament-new.self-a934dfdfa5200d2800e14677945db4137eb98eee008aab97703ecc247ab7214f.js?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/tournaments.self-7813229a93186d59da197d3ae39aa82796f83134cf24d0577f0097b0580b752b.js?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:27:31 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:27:32 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:27:32 +0100
+
+
+Started GET "/" for ::1 at 2016-03-07 19:28:39 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 256ms (Views: 255.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:28:39 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:28:39 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:28:39 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:28:39 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:28:39 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:28:39 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:28:40 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:28:40 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:28:40 +0100
+
+
+Started GET "/assets/tournament-new.self-e90c3f3a12e97df143cbe1aea8c9648d1f072f6f1bab2cdf2938fabbbedd1267.js?body=1" for ::1 at 2016-03-07 19:28:40 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:28:40 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:28:40 +0100
+
+
+Started GET "/assets/tournaments.self-7813229a93186d59da197d3ae39aa82796f83134cf24d0577f0097b0580b752b.js?body=1" for ::1 at 2016-03-07 19:28:40 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:28:40 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:28:40 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:28:40 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:28:40 +0100
+
+
+Started GET "/" for ::1 at 2016-03-07 19:30:45 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 777ms (Views: 777.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/tournament-new.self-e90c3f3a12e97df143cbe1aea8c9648d1f072f6f1bab2cdf2938fabbbedd1267.js?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:30:47 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:30:47 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:30:48 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:30:49 +0100
+
+ActionController::RoutingError (No route matches [DELETE] "/api/tournaments"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (37.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:30:59 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 49ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/tournament-new.self-e90c3f3a12e97df143cbe1aea8c9648d1f072f6f1bab2cdf2938fabbbedd1267.js?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:31:00 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:31:00 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:31:01 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:31:03 +0100
+
+ActionController::RoutingError (No route matches [DELETE] "/api/tournaments"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (36.4ms)
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:31:15 +0100
+
+ActionController::RoutingError (No route matches [DELETE] "/api/tournaments"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (28.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:31:53 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/tournament-new.self-e90c3f3a12e97df143cbe1aea8c9648d1f072f6f1bab2cdf2938fabbbedd1267.js?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:31:54 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:31:54 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.6ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:31:55 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:31:57 +0100
+
+ActionController::RoutingError (No route matches [DELETE] "/api/tournaments"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (2.1ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (64.3ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:32:43 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 409ms (Views: 408.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:32:44 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:32:45 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:32:45 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:32:46 +0100
+
+ActionController::RoutingError (No route matches [DELETE] "/api/tournaments"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (37.5ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:39:45 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 99ms (Views: 98.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:39:46 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:39:46 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.6ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 37ms (Views: 12.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:39:47 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:39:47 +0100
+
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::TournamentsController):
+  actionpack (4.2.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.text.erb (0.6ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:39:55 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 81ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:39:55 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:39:56 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:39:56 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:39:56 +0100
+
+
+Started GET "/" for ::1 at 2016-03-07 19:39:57 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 116ms (Views: 115.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:39:58 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:39:59 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:39:59 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:40:01 +0100
+
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::TournamentsController):
+  actionpack (4.2.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.text.erb (0.7ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:41:08 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:41:09 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:41:09 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (1.0ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 78ms (Views: 9.8ms | ActiveRecord: 46.1ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:41:10 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:41:10 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1[0m  [["id", 7]]
+Completed 500 Internal Server Error in 153580ms (ActiveRecord: 0.3ms)
+
+SystemExit (exit):
+  app/controllers/api/tournaments_controller.rb:15:in `delete'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (663.8ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (12.3ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (33.4ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (882.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:43:50 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 2647ms (Views: 2642.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:43:53 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 1129ms (Views: 1112.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:43:54 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 1161ms (Views: 1158.8ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:43:55 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"7"}
+  [1m[35mTournament Load (0.2ms)[0m  SELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1  [["id", 7]]
+Completed 500 Internal Server Error in 157835ms (ActiveRecord: 0.2ms)
+
+SystemExit (exit):
+  app/controllers/api/tournaments_controller.rb:15:in `delete'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (510.0ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (11.6ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (15.0ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (686.3ms)
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:46:38 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"7"}
+
+
+Started GET "/" for ::1 at 2016-03-07 19:46:50 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 1277ms (Views: 1276.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournament-new.self-4a24c1e4572aacb98e371b45d7b0724bd9ad54f905533a068f2e6ec29a1e1e8d.js?body=1" for ::1 at 2016-03-07 19:46:52 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:46:52 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 75ms (Views: 11.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:46:53 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:46:57 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:46:59 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"7"}
+Completed 500 Internal Server Error in 22490ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/api/tournaments_controller.rb:15:in `delete'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (408.0ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (18.8ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (14.9ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (569.5ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:47:31 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 592ms (Views: 588.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:47:32 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:47:33 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:47:33 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:47:33 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:47:33 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:47:33 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:47:33 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:47:33 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:47:33 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:47:34 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:47:34 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:47:34 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:47:34 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:47:34 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:47:34 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:47:35 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (2.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 273ms (Views: 267.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:47:35 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:47:36 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"7"}
+
+
+Started GET "/" for ::1 at 2016-03-07 19:48:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 665ms (Views: 664.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:48:07 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:48:08 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:48:08 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 34ms (Views: 16.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:48:08 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:48:10 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "tournaments" WHERE "tournaments"."id" = ?[0m  [["id", 7]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Completed 200 OK in 60ms (Views: 1.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:48:16 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 103ms (Views: 102.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:48:17 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:48:17 +0100
+
+
+Started GET "/" for ::1 at 2016-03-07 19:55:17 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 227ms (Views: 226.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:55:18 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.4ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:55:18 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:55:19 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (39.2ms)[0m  [1mDELETE FROM "tournaments" WHERE "tournaments"."id" = ?[0m  [["id", 1]]
+  [1m[35m (3.1ms)[0m  commit transaction
+Completed 200 OK in 45ms (Views: 0.6ms | ActiveRecord: 42.5ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:55:22 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 53ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:55:23 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:55:23 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:55:24 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:55:26 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"6"}
+  [1m[35mTournament Load (0.2ms)[0m  SELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "tournaments" WHERE "tournaments"."id" = ?  [["id", 6]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:55:28 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 63ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:55:28 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:55:28 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:55:29 +0100
+
+
+Started GET "/tournaments/2" for ::1 at 2016-03-07 19:55:30 +0100
+
+ActionController::RoutingError (No route matches [GET] "/tournaments/2"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (30.3ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (286.1ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (256.9ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (393.9ms)
+
+
+Started GET "/tournaments/2" for ::1 at 2016-03-07 19:55:35 +0100
+
+ActionController::RoutingError (No route matches [GET] "/tournaments/2"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.1ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (115.8ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.8ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (232.1ms)
+
+
+Started GET "/tournaments/" for ::1 at 2016-03-07 19:55:41 +0100
+
+ActionController::RoutingError (No route matches [GET] "/tournaments"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (116.2ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (87.3ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (194.6ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:55:45 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 167ms (Views: 166.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:55:46 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:55:46 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:55:47 +0100
+
+
+Started POST "/api/tournaments" for ::1 at 2016-03-07 19:55:57 +0100
+Processing by Api::TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gum2NWsu2ziKTfgQmNuqQWyrfUfrbdp3o90Sxm6fJMkRf/UrTCszRqS24BJ1t9Ktbq7Krp2Ql2gbUi2GGZJl7w==", "tournament"=>{"name"=>"Cantabria Infinita"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cantabria Infinita"], ["created_at", "2016-03-07 18:55:57.327404"], ["updated_at", "2016-03-07 18:55:57.327404"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Completed 201 Created in 308ms (Views: 0.7ms | ActiveRecord: 3.6ms)
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:55:59 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mDELETE FROM "tournaments" WHERE "tournaments"."id" = ?[0m  [["id", 5]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:56:03 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:56:03 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:56:03 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:56:03 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:56:03 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:56:03 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:56:03 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:56:04 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:56:04 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:56:04 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:56:04 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:56:04 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:56:04 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:56:04 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:56:04 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:56:04 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:56:04 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:56:04 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 19:56:05 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"4"}
+  [1m[35mTournament Load (0.2ms)[0m  SELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "tournaments" WHERE "tournaments"."id" = ?  [["id", 4]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 8ms (Views: 0.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 19:56:09 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 48ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 19:56:09 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 19:56:09 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:56:09 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 19:56:09 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 19:56:09 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 19:56:09 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 19:56:10 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:56:10 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 19:56:10 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-03-07 19:56:10 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 19:56:10 +0100
+
+
+Started GET "/assets/tournaments-index.self-9f1856907c1dba0c9bf952928f4dc00b02ac196baf6907de3c0737ad9ea40d54.js?body=1" for ::1 at 2016-03-07 19:56:10 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 19:56:10 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 19:56:10 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 19:56:10 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 19:56:10 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 19:56:10 +0100
+
+
+Started GET "/" for ::1 at 2016-03-07 20:06:39 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 727ms (Views: 727.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-5d492b2e77bb1c7d243e7cf1daef7f2953b8ef41984375043d7686c8340772bd.js?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/tournaments-index.self-65071b3fda2176ff11771a88a18dc3c52e692c6bb6c97f9fcda41e619c863512.js?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 20:06:40 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 20:06:40 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 20:06:41 +0100
+
+
+Started POST "/api/tournaments" for ::1 at 2016-03-07 20:06:45 +0100
+Processing by Api::TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3it3fA3wa+giDwOb5nlSMlZYWoiNWa1QUIQy7+pMprRNvTRiKvWDlgz0G5kLFSreVF3tYfuk4E/oCw2vnUHnkg==", "tournament"=>{"name"=>"kcjbsdkj"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (37.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "kcjbsdkj"], ["created_at", "2016-03-07 19:06:45.878062"], ["updated_at", "2016-03-07 19:06:45.878062"]]
+  [1m[35m (27.6ms)[0m  commit transaction
+Completed 201 Created in 69ms (Views: 0.5ms | ActiveRecord: 65.1ms)
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 20:06:47 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "tournaments" WHERE "tournaments"."id" = ?[0m  [["id", 9]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 20:06:53 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 97ms (Views: 96.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 20:06:53 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 20:06:53 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 20:06:53 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 20:06:53 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 20:06:53 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 20:06:53 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 20:06:54 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 20:06:54 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-5d492b2e77bb1c7d243e7cf1daef7f2953b8ef41984375043d7686c8340772bd.js?body=1" for ::1 at 2016-03-07 20:06:54 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 20:06:54 +0100
+
+
+Started GET "/assets/tournament-new.self-c026b30db36ac45fa05fbf307684f094b7f337b9e58e276af39f7a7fe1672ad3.js?body=1" for ::1 at 2016-03-07 20:06:54 +0100
+
+
+Started GET "/assets/tournaments-index.self-65071b3fda2176ff11771a88a18dc3c52e692c6bb6c97f9fcda41e619c863512.js?body=1" for ::1 at 2016-03-07 20:06:54 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 20:06:54 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 20:06:54 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 20:06:54 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 20:06:54 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 20:06:54 +0100
+
+
+Started POST "/api/tournaments" for ::1 at 2016-03-07 20:07:07 +0100
+Processing by Api::TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ymsquesA8BrwSkGWGoeWRU/Fil7zFOOFzhBwW26pIZRZ/WmnzAUYZN6xWZT36+6pTcA9t4Xprpp2n08bGaRgsg==", "tournament"=>{"name"=>"xdkjbvhdifu"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "xdkjbvhdifu"], ["created_at", "2016-03-07 19:07:07.217499"], ["updated_at", "2016-03-07 19:07:07.217499"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Completed 201 Created in 7ms (Views: 0.4ms | ActiveRecord: 2.8ms)
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 20:07:08 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mTournament Load (0.2ms)[0m  [1mSELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "tournaments" WHERE "tournaments"."id" = ?[0m  [["id", 10]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 20:07:22 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 374ms (Views: 373.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-5d492b2e77bb1c7d243e7cf1daef7f2953b8ef41984375043d7686c8340772bd.js?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/tournament-new.self-9861b0def5e15959eee52ca4eca9c2da79d44b6feca182c62a6ebbe01fe05137.js?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/tournaments-index.self-65071b3fda2176ff11771a88a18dc3c52e692c6bb6c97f9fcda41e619c863512.js?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 20:07:23 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 20:07:23 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 20:07:24 +0100
+
+
+Started GET "/" for ::1 at 2016-03-07 20:08:47 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 331ms (Views: 330.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/tournament-new.self-4000c5c11413d98e77f02366cb1bebbd305e85158ca70d3435cde49f6ae7fa04.js?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/tournaments-index.self-18c3f7fb1763b2291154cd96eba61485d59ef555425cd22802f621935683c19f.js?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-5d492b2e77bb1c7d243e7cf1daef7f2953b8ef41984375043d7686c8340772bd.js?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 20:08:48 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 20:08:48 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 20:08:49 +0100
+
+
+Started POST "/api/tournaments" for ::1 at 2016-03-07 20:08:52 +0100
+Processing by Api::TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EU6tVxswybA+jJueTGeFUUUTwutg1Hl/EvfJu7VUVhGC2O5JPDUhzhB3g5yhC/29RxZ1AhYpNGCqePb7wlkXNw==", "tournament"=>{"name"=>"dsd"}}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "dsd"], ["created_at", "2016-03-07 19:08:52.911189"], ["updated_at", "2016-03-07 19:08:52.911189"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 11ms (Views: 0.6ms | ActiveRecord: 6.4ms)
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 20:08:53 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"11"}
+  [1m[35mTournament Load (0.4ms)[0m  SELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "tournaments" WHERE "tournaments"."id" = ?  [["id", 11]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 20:08:53 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/tournaments" for ::1 at 2016-03-07 20:24:28 +0100
+Processing by Api::TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EU6tVxswybA+jJueTGeFUUUTwutg1Hl/EvfJu7VUVhGC2O5JPDUhzhB3g5yhC/29RxZ1AhYpNGCqePb7wlkXNw==", "tournament"=>{"name"=>"jsjs"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "jsjs"], ["created_at", "2016-03-07 19:24:29.343131"], ["updated_at", "2016-03-07 19:24:29.343131"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 45ms (Views: 0.5ms | ActiveRecord: 3.8ms)
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 20:24:30 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"12"}
+  [1m[35mTournament Load (0.3ms)[0m  SELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "tournaments" WHERE "tournaments"."id" = ?  [["id", 12]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 2.9ms)
+
+ActionView::MissingTemplate (Missing template api/tournaments/delete, application/delete with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :web_console_v2], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/Users/macbook/Google Drive/IronhackMac/Day Exercises/WEEK6/video-games/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.7ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 20:24:49 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 221ms (Views: 220.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 20:24:49 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-5d492b2e77bb1c7d243e7cf1daef7f2953b8ef41984375043d7686c8340772bd.js?body=1" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/assets/tournament-new.self-4000c5c11413d98e77f02366cb1bebbd305e85158ca70d3435cde49f6ae7fa04.js?body=1" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/assets/tournaments-index.self-18c3f7fb1763b2291154cd96eba61485d59ef555425cd22802f621935683c19f.js?body=1" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 20:24:50 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 20:24:50 +0100
+
+
+Started POST "/api/tournaments" for ::1 at 2016-03-07 20:24:55 +0100
+Processing by Api::TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xt5nxiaQoNhtIlZpWz8PKn34M/DmAXoQ0vrl6x8+3L9VSCTYAZVIpkPZTmu2U3fGf/2EGZD8Nw9qddqraDOdmQ==", "tournament"=>{"name"=>"djdjd"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "djdjd"], ["created_at", "2016-03-07 19:24:55.620563"], ["updated_at", "2016-03-07 19:24:55.620563"]]
+  [1m[36m (212.2ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 218ms (Views: 0.6ms | ActiveRecord: 212.7ms)
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 20:24:56 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"13"}
+  [1m[35mTournament Load (0.2ms)[0m  SELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "tournaments" WHERE "tournaments"."id" = ?  [["id", 13]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 2.8ms)
+
+ActionView::MissingTemplate (Missing template api/tournaments/delete, application/delete with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :web_console_v2], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/Users/macbook/Google Drive/IronhackMac/Day Exercises/WEEK6/video-games/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.6ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 20:25:26 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-5d492b2e77bb1c7d243e7cf1daef7f2953b8ef41984375043d7686c8340772bd.js?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/tournament-new.self-4000c5c11413d98e77f02366cb1bebbd305e85158ca70d3435cde49f6ae7fa04.js?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/tournaments-index.self-18c3f7fb1763b2291154cd96eba61485d59ef555425cd22802f621935683c19f.js?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 20:25:27 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (1.5ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 20:25:27 +0100
+
+
+Started POST "/api/tournaments" for ::1 at 2016-03-07 20:26:11 +0100
+Processing by Api::TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rMEFWhrXZpZzEbOI1Owkwx2Qzd66lG8qS4g7bHfiX5E/V0ZEPdKO6F3qq4o5gFwvH5V6N8xpIjXzBwQsAO8etw==", "tournament"=>{"name"=>"dndn"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "dndn"], ["created_at", "2016-03-07 19:26:11.270962"], ["updated_at", "2016-03-07 19:26:11.270962"]]
+  [1m[36m (26.4ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 32ms (Views: 0.6ms | ActiveRecord: 27.7ms)
+
+
+Started DELETE "/api/tournaments" for ::1 at 2016-03-07 20:26:12 +0100
+Processing by Api::TournamentsController#delete as */*
+  Parameters: {"id"=>"14"}
+  [1m[35mTournament Load (0.2ms)[0m  SELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "tournaments" WHERE "tournaments"."id" = ?  [["id", 14]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 2.9ms)
+
+ActionView::MissingTemplate (Missing template api/tournaments/delete, application/delete with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :web_console_v2], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/Users/macbook/Google Drive/IronhackMac/Day Exercises/WEEK6/video-games/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.6ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 20:26:17 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/tournaments.self-bb1d3940dfeaee59c05c41980e045e57f65f9ecb8758d7dab9e6c9d28d82309e.css?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/build-tourney-html.self-f1bae6a03f1b269b0e54fd7182aeb6a7bc84945ce2005351e5c6ee34745d25a3.js?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/tournament-new.self-4000c5c11413d98e77f02366cb1bebbd305e85158ca70d3435cde49f6ae7fa04.js?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/tournaments-index.self-18c3f7fb1763b2291154cd96eba61485d59ef555425cd22802f621935683c19f.js?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-5d492b2e77bb1c7d243e7cf1daef7f2953b8ef41984375043d7686c8340772bd.js?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/tournaments.self-948d8b382943614ff98dcb32fb782b2ce285203470daaa33b7ee704bb1201d36.js?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-03-07 20:26:17 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-03-07 20:26:18 +0100
+Processing by Api::TournamentsController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-03-07 20:26:18 +0100
+
+
+Started POST "/api/tournaments" for ::1 at 2016-03-07 20:26:38 +0100
+Processing by Api::TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0XLtssS1cH0DrR7bvFYMz0C8p/ni1tVHSkajLSsCa9BC5K6s47CYAy1WBtlROnQjQrkQEJQrmFjyyZxtXA8q9g==", "tournament"=>{"name"=>"jdjdj"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "jdjdj"], ["created_at", "2016-03-07 19:26:38.155551"], ["updated_at", "2016-03-07 19:26:38.155551"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 7ms (Views: 0.5ms | ActiveRecord: 3.3ms)

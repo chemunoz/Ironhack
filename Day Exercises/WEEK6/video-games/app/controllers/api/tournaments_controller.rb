@@ -7,7 +7,12 @@ class Api::TournamentsController < ApplicationController
 
   def create
     tour = Tournament.create(tournament_params)
-    render json: tour
+    render status: 201, json: tour
+  end
+
+  def delete
+    tour = Tournament.find(params[:id])
+    tour.destroy
   end
 
   private

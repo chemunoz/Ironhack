@@ -1,4 +1,4 @@
-function buildTourneyListHtml (tournaments) {
+ function buildTourneyListHtml (tournaments) {
   function buildItemHtml (previous, tournament) {
     return previous + buildTourneyHtml(tournament)
   }

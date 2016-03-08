@@ -58,3 +58,13 @@ function showTourney (tourney) {
     $tourneySection.append(buildTourneyListHtml([ tourney ]))
   }
 }
+
+
+function deleteTournament(event){
+  var request = $.ajax({
+      url: '/api/tournaments',
+      type: 'DELETE',
+      data: {id: event.currentTarget.value}
+    });
+  request.done(tournamentsIndex)
+}
